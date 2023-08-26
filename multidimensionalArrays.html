@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multidimensional Arrays</title>
+    <script>
+        var ary = [
+            ["Harry", 18, " Male"," BSC"],
+            ["Harry", 19, " Male"," BSC"],
+            ["Harry", 17, " Male"," BSC"],
+            ["Harry", 20, " Male"," BSC"],
+            ["Harry", 20, " Male"," BSC"],
+        ];
+        document.write(ary.length);
+        document.write("<table border = '1px'>");
+        for (var a = 0; a<ary.length; a++){
+            document.write("<tr>");
+            for (var b = 0; b<4; b++){
+            document.write("<td>" + ary[a][b] + "</td>");
+        }
+        document.write("</tr>");
+     }
+    //   document.write(ary[3][1]);  
+    document.write("</table");
+    </script>
+</head>
+<body>
+    <!-- In multidimensional arrays we can give multiple data all together and when we want to print it we have t call the correct array with correct number as well.  -->
+    <!-- the length function tells us that how many total numbers of given data are there. Only in that array where we have added it like either inner array or outer array  -->
+</body>
+</html>
