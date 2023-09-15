@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class and Objects</title>
+    <script>
+        class RailwayForm{
+            submit(){
+                alert(this.name +"'s Form Submitted");
+            }
+            cancel (){
+                alert(this.name +"'s form is canceled");
+            }
+            fill(givenname){
+                this.name = givenname
+            }
+        }
+
+// create a form for person1
+        let person1 = new RailwayForm();
+//filling the form with person1's details
+        person1.fill('Umair');
+// create a form for person2
+        let person2 = new RailwayForm();
+//filling the form with person1's details
+        person2.fill('Munir');
+        
+
+        person1.submit( );
+        person2.submit( );
+        person1.cancel( );
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
