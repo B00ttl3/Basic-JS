@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+    <script>
+        var a = {
+            firstname : "Umair",
+            lastname : "Munir",
+            age : 25,
+            class : "BSC",
+            favmovies : ["Legend"],
+            // hobbies : ["Video Games", "Chess" , "Movies"],
+            // living : {
+            //     "city" : "Lahore",
+            //     "country" : "Pakistan"
+            // }
+            work : function(){
+                return 40000; 
+            },
+            fullNmae : function(){
+                return this.firstname+" "+this.lastname;
+            }
+        };
+        // delete a.favmovies;
+        
+            // console.log(a);
+            // if we want to check whether there is any property in the variable then use in like (the property which you want to check will be written in"" then in and then the name of the variable)
+            // console.log("email" in a);
+
+            // if we want to check whether all the properties are in the variable or not in the code below, it will tell us what are the properties and what are their values 
+
+            // for (let key in a){
+            //     console.log(key + "; " +a[key]);
+            // }
+
+            // now can we make an array inside an object? hobbies and favmovies are array and thats how you write an array inside the object
+                // console.log(a.hobbies[2]);
+
+            // can we define an object inside an object? if you want to make an object inside an object you have to write both property and its value inside "" like in "city" : "Lahore" city is property and lahore is its value but both are written inside the ""
+                // console.log(a.living.city);
+            
+                // lets declair a function inside the obejct. If we want to print the function which is defined inside the object write the name of the function after . and then make sure to add (). also we have to add this before writing two properties together inside the function which is written in the object
+                    console.log(a.work());
+                    console.log(a.fullNmae());
+
+    // </script>
+</head>
+<body>
+    <!-- object is the advanced version of arrays objects will be written in {} while array is written in []. In the {} we will give a property first and then put the value in that property. Like in {name: "Umair", age: 22} name is the property and "Umair" is the value of that property --> 
+    <!-- If you want to print object use . and write property and then if you want to print array use [] and write the number inside it -->
+</body>
+</html>
